@@ -30,3 +30,4 @@ Select appropriate feature variables to include in the model (using MRMR).
 Adjust the hyperparameters of the model and screen for better-performing models.
 
 Plot the variable importance graph of the optimal model and generate evaluation result images.
+![Uploading 365e36d52dd9cadc5b832ad823502e8.png…]()
