@@ -8,13 +8,13 @@ TEXT
 Project  
 ├─0_Read_subfolders.py  
 ├──NRRD  
-    │    ├────1  
+    │    ├──1  
     │    │    ├─6 Body 5.0 CE.nrrd  
     │    │    ├─Segmentation_1.seg.nrrd  
-    │    ├────2  
+    │    ├──2  
     │    │    ├─3 5mm C.nrrd  
     │    │    ├─Segmentation_2.seg.nrrd  
-    │    ├────3  
+    │    ├──3  
     │    │    ├─2 Unnamed Series.nrrd  
     │    │    ├─Segmentation.seg.nrrd  
 Calculate the distribution of Hounsfield Unit (HU) values and plot a histogram for observation.
