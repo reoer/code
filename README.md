@@ -12,9 +12,7 @@
   | Column Name         | Data Type    | Description                     |
   |---------------------|--------------|---------------------------------|
   | `radiomics_features`| Numeric      | Image-derived biomarkers        |
-      ...
   | `clinic_features`   | Numeric      | Clinical measurements           |
-      ...
   | `Group`             | Categorical  | Experimental cohort assignment  |
 
 
