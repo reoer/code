@@ -36,6 +36,7 @@ Project
 ...
 ...
 ...
+
 Calculate the distribution of Hounsfield Unit (HU) values and plot a histogram for observation.
 
 Perform image resampling and grayscale value correction.
@@ -49,3 +50,4 @@ Select appropriate feature variables to include in the model (using MRMR).
 Adjust the hyperparameters of the model and screen for better-performing models.
 
 Plot the variable importance graph of the optimal model and generate evaluation result images.
+![FlowChart](./images/liuchengtu.png)
