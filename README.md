@@ -1,22 +1,43 @@
-# code
-Body composition machine learning
+## Ethics and Compliance
+<details>
+<summary><strong>⚠️ Data Usage Disclaimer</strong></summary>
+
+> **Data Declaration**  
+> This code repository contains no real patient data. Actual data must be obtained by users independently and used in compliance with applicable local ethical regulations including but not limited to HIPAA, GDPR, and institutional IRB requirements.
+</details>
+
+## Data Input Specifications
+- **Format**: Microsoft Excel (`.xlsx`) in "model" folder
+- **Required Columns**:
+  | Column Name         | Data Type    | Description                     |
+  |---------------------|--------------|---------------------------------|
+  | `radiomics_features`| Numeric      | Image-derived biomarkers        |
+      ...
+  | `clinic_features`   | Numeric      | Clinical measurements           |
+      ...
+  | `Group`             | Categorical  | Experimental cohort assignment  |
+
 
 Read the information from the image feature files, such as pixel size, voxel space, and mask label values.
 Read the directory structure:
 
-TEXT
+# code
+Body composition machine learning
 Project  
 ├─0_Read_subfolders.py  
 ├──NRRD  
     │    ├──1  
-    │    │    ├─6 Body 5.0 CE.nrrd  
-    │    │    ├─Segmentation_1.seg.nrrd  
-    │    ├──2  
-    │    │    ├─3 5mm C.nrrd  
-    │    │    ├─Segmentation_2.seg.nrrd  
-    │    ├──3  
-    │    │    ├─2 Unnamed Series.nrrd  
+    │    │    ├─CT.nrrd  
     │    │    ├─Segmentation.seg.nrrd  
+    │    ├──2  
+    │    │    ├─CT.nrrd  
+    │    │    ├─Segmentation.seg.nrrd  
+    │    ├──3  
+    │    │    ├─CT.nrrd  
+    │    │    ├─Segmentation.seg.nrrd  
+...
+...
+...
 Calculate the distribution of Hounsfield Unit (HU) values and plot a histogram for observation.
 
 Perform image resampling and grayscale value correction.
