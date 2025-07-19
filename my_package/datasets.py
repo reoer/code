@@ -9,9 +9,9 @@ def prepare_data():
     # 定义文件路径
     parent_dir = Path.cwd() / "data"
     # 定义文件路径
-    data_path = parent_dir / "新整合+附二.xlsx"
+    data_path = parent_dir / "clinic.xlsx"
     features_path = parent_dir / "radiomics_features.xlsx"
-    filtered_path = parent_dir / "符合筛选的特征.xlsx"
+    filtered_path = parent_dir / "filter features.xlsx"
 
     # 示例：检查文件是否存在
     if not data_path.exists():
