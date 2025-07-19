@@ -21,6 +21,7 @@
 
 Read the information from the image feature files, such as pixel size, voxel space, and mask label values.
 Read the directory structure:
+
 ## 📁 Data Requirements
 ### Directory Structure
 ```plaintext
@@ -33,8 +34,8 @@ Project/
 │   │   ├── ...
 ├── model/
 │   ├── clinical_data.xlsx         # Clinical dataset
-
-
+```
+## 
 Calculate the distribution of Hounsfield Unit (HU) values and plot a histogram for observation.
 
 Perform image resampling and grayscale value correction.
