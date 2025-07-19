@@ -1,3 +1,7 @@
+# Body Composition Analysis Pipeline
+
+![Analysis Pipeline](./images/liuchengtu.png)
+
 ## Ethics and Compliance
 <details>
 <summary><strong>⚠️ Data Usage Disclaimer</strong></summary>
@@ -15,27 +19,21 @@
   | `clinic_features`   | Numeric      | Clinical measurements           |
   | `Group`             | Categorical  | Experimental cohort assignment  |
 
-
 Read the information from the image feature files, such as pixel size, voxel space, and mask label values.
 Read the directory structure:
+## 📁 Data Requirements
+### Directory Structure
+```plaintext
+Project/
+├── NRRD/                          # Primary imaging data
+│   ├── P001/                      # Anonymized patient ID
+│   │   ├── CT.nrrd                # Axial CT scan (required)
+│   │   ├── Segmentation.seg.nrrd  # Segmentation mask (required)
+│   ├── P002/
+│   │   ├── ...
+├── model/
+│   ├── clinical_data.xlsx         # Clinical dataset
 
-# code
-Body composition machine learning
-Project  
-├─0_Read_subfolders.py  
-├──NRRD  
-    │    ├──1  
-    │    │    ├─CT.nrrd  
-    │    │    ├─Segmentation.seg.nrrd  
-    │    ├──2  
-    │    │    ├─CT.nrrd  
-    │    │    ├─Segmentation.seg.nrrd  
-    │    ├──3  
-    │    │    ├─CT.nrrd  
-    │    │    ├─Segmentation.seg.nrrd  
-...
-...
-...
 
 Calculate the distribution of Hounsfield Unit (HU) values and plot a histogram for observation.
 
@@ -50,4 +48,4 @@ Select appropriate feature variables to include in the model (using MRMR).
 Adjust the hyperparameters of the model and screen for better-performing models.
 
 Plot the variable importance graph of the optimal model and generate evaluation result images.
-![FlowChart](./images/liuchengtu.png)
+
