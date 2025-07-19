@@ -51,7 +51,7 @@ def prepare_data():
 
 
 def local_clinic():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path_clinic = parent_dir / "临床.xlsx"
     X = pd.read_excel(data_path_clinic).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path_clinic)["ER"]
@@ -59,7 +59,7 @@ def local_clinic():
 
 
 def local_radiomics():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path = parent_dir / "影像.xlsx"
     X = pd.read_excel(data_path).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path)["ER"]
@@ -67,7 +67,7 @@ def local_radiomics():
 
 
 def local_integrate():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path = parent_dir / "融合.xlsx"
     X = pd.read_excel(data_path).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path)["ER"]
@@ -75,7 +75,7 @@ def local_integrate():
 
 
 def local_radiomics0():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path = parent_dir / "影像0.xlsx"
     X = pd.read_excel(data_path).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path)["ER"]
@@ -83,7 +83,7 @@ def local_radiomics0():
 
 
 def local_radiomics1():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path = parent_dir / "影像1.xlsx"
     X = pd.read_excel(data_path).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path)["ER"]
@@ -91,7 +91,7 @@ def local_radiomics1():
 
 
 def local_radiomics2():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path = parent_dir / "影像2.xlsx"
     X = pd.read_excel(data_path).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path)["ER"]
@@ -99,7 +99,7 @@ def local_radiomics2():
 
 
 def local_radiomics3():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path = parent_dir / "影像3.xlsx"
     X = pd.read_excel(data_path).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path)["ER"]
@@ -107,7 +107,7 @@ def local_radiomics3():
 
 
 def local_radiomics4():
-    parent_dir = Path.cwd() / "model_pre_data"
+    parent_dir = Path.cwd() / "model"
     data_path = parent_dir / "影像4.xlsx"
     X = pd.read_excel(data_path).drop(columns=['subfolder', 'ER'])
     y = pd.read_excel(data_path)["ER"]
